@@ -1,5 +1,5 @@
 /* VARIABLES   */
-const books = [];
+let books = [];
 const renderBooks = document.getElementById('render-books');
 const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
@@ -14,7 +14,7 @@ function render() {
     <ul>
       <li>${books[i].title}</li>
       <li>${books[i].author}</li>
-      <li><a id='delete' href="#">Remove</a></li>
+      <li><a id="delete" name="${books[i].title}" href="#">Remove</a></li>
     </ul>
     <hr>
     `;
@@ -33,8 +33,17 @@ function addNewBook() {
   render();
 }
 
+function deleteBook(e) {
+  const deleteName = e.target.name;
+  books = books.filter((book) => book.title !== deleteName);
+  render();
+}
+
 /*  RENDERING BOOKS  */
 render();
 
 /* Add book */
 addBook.addEventListener('click', addNewBook);
+
+/* Delete books */
+renderBooks.addEventListener('click', deleteBook);
