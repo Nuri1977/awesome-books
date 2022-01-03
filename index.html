@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Awesome Books</title>
 </head>
 <body>
-    <h1>Hello</h1>
+  <main>
+    <div class="container">
+      <h1>Awesome Books</h1>
+      <div id="render-books">
+      </div>
+        <!--
+        <ul>
+          <li>Title</li>
+          <li>Author</li>
+          <li><a id='delete' href="#">Remove</a></li>
+        </ul>
+        <ul>
+          <li>Title2</li>
+          <li>Author2</li>
+          <li><a id='delete' href="#">Remove</a></li>
+        </ul>
+        -->
+      
+      <form id='booksForm'>
+        <input id='title' type="text" placeholder='Title' ><br>
+        <input id='author' type="text" placeholder='Author'><br>
+        <button id='addBook' type=button>Add</button>
+      </form>
+    </div>
+  </main>
 
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

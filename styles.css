@@ -1,5 +1,45 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+#render-books ul {
+  margin: 30px 0;
+}
+
+#render-books li {
+  margin-top: 5px;
+}
+
+#render-books li a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 3px;
+}
+
+#render-books hr {
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
