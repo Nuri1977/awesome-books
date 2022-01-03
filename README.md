@@ -1,53 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](img/AwesomeBooks.PNG)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://nuri1977.github.io/awesome-books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+** git clone https://github.com/Nuri1977/awesome-books.git**
+** git pull origin **
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
 
 ## Authors
 
-👤 **Author**
+👤 **Authors**
+
+  ## Author1
+
+  👤 **Nuri Lacka**
 
 - GitHub: [@Nuri1977](https://github.com/Nuri1977)
 - Twitter: [@Lackanuri](https://twitter.com/LackaNuri)
 - LinkedIn: [@nurilacka](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
+
+## Author2
+
+👤 **Dejan Vujovic**
+
+- Github : [@VuDej](https://github.com/VuDej)
+- Twitter: [@DejanVuj](https://twitter.com/DejanVuj)
+- LinkdIn : [@Dejan-Vujovic](https://www.linkedin.com/in/dejan-vujovic-5a0672225/)
+
 
 
 ## 🤝 Contributing
