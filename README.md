@@ -2,9 +2,9 @@
 
 # Awesome Books
 
-> One paragraph statement about the project.
+> A Microverse project on learnong javascript.
 
-![screenshot](img/AwesomeBooks.PNG)
+![screenshot](./img/AwesomeBooks.png)
 
 Additional description about the project and its features.
 
