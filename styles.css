@@ -1,5 +1,38 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#books ul {
+  margin-top: 30px;
+  list-style: none;
+}
+
+#books li {
+  margin-top: 5px;
+}
+
+#books li a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 3px;
+}
+
+#books hr {
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
