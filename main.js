@@ -1,48 +1,40 @@
-/* MOCH DATABASE    */
-const books = [
-  // {
-  //   name: 'Book1',
-  //   author: 'Author1',
-  // },
-  // {
-  //   name: 'Book2',
-  //   author: 'Author2',
-  // },
-];
-console.log(books);
-
-/*  RENDERING BOOKS  */
+/* VARIABLES   */
+const books = [];
 const renderBooks = document.getElementById('render-books');
-let renderItem = '';
-function render() {
-for (let i = 0; i < books.length; i += 1) {
-  renderItem = `
-  <ul>
-    <li>${books[i].title}</li>
-    <li>${books[i].author}</li>
-    <li><a id='delete' href="#">Remove</a></li>
-  </ul>
-  <hr>
-  `;
-
-  renderBooks.innerHTML += renderItem;
-}
-
-}
-
 const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
 const addBook = document.querySelector('#addBook');
 
+/* Functions */
+function render() {
+  renderBooks.innerHTML = '';
+  for (let i = 0; i < books.length; i += 1) {
+    let renderItem = '';
+    renderItem = `
+    <ul>
+      <li>${books[i].title}</li>
+      <li>${books[i].author}</li>
+      <li><a id='delete' href="#">Remove</a></li>
+    </ul>
+    <hr>
+    `;
+    renderBooks.innerHTML += renderItem;
+  }
+}
 
-addBook.addEventListener('click', (e)  => {
-     let title = titleInput.value;
-     let author = authorInput.value;
-     let newBook = {title, author};
-     books.push(newBook)
-     console.log('books:', books)
+function addNewBook() {
+  const newBook = {
+    title: titleInput.value,
+    author: authorInput.value,
+  };
+  books.push(newBook);
+  titleInput.value = '';
+  authorInput.value = '';
+  render();
+}
 
+/*  RENDERING BOOKS  */
 render();
 
-
-});
+/* Add book */
+addBook.addEventListener('click', addNewBook);
