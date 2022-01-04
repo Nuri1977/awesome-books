@@ -7,21 +7,21 @@ const addBook = document.querySelector('#addBook');
 const localBooks = localStorage.getItem('booksStore');
 
 /* Functions */
-function render() {
-  renderBooks.innerHTML = '';
-  for (let i = 0; i < books.length; i += 1) {
-    let renderItem = '';
-    renderItem = `
-    <ul>
-      <li>${books[i].title}</li>
-      <li>${books[i].author}</li>
-      <li><a id="delete" name="${books[i].title}" href="#">Remove</a></li>
-    </ul>
-    <hr>
-    `;
-    renderBooks.innerHTML += renderItem;
-  }
-}
+// function render() {
+//   renderBooks.innerHTML = '';
+//   for (let i = 0; i < books.length; i += 1) {
+//     let renderItem = '';
+//     renderItem = `
+//     <ul>
+//       <li>${books[i].title}</li>
+//       <li>${books[i].author}</li>
+//       <li><a id="delete" name="${books[i].title}" href="#">Remove</a></li>
+//     </ul>
+//     <hr>
+//     `;
+//     renderBooks.innerHTML += renderItem;
+//   }
+// }
 
 function getStore() {
   if (localBooks) {

@@ -4,42 +4,49 @@
   margin: 0;
 }
 
-.container {
-  max-width: 500px;
-  margin: auto;
-}
-
-ul {
-  list-style: none;
-}
-
-#render-books ul {
-  margin: 30px 0;
-}
-
-#render-books li {
-  margin-top: 5px;
-}
-
-#render-books li a {
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #000;
-  padding: 3px;
-}
-
-#render-books hr {
-  margin-top: 10px;
-}
-
-form {
+#render-books {
+  display: grid;
   margin-top: 20px;
 }
 
-form input {
-  margin-top: 10px;
+#render-books a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0 5px;
 }
 
-button {
-  margin-top: 10px;
+#render-books tr:nth-child(odd) {
+  background-color: rgb(245, 238, 238);
+}
+
+#render-books td {
+  padding: 5px 25px;
+}
+
+.form-container {
+  margin: 50px 24px;
+  ;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#booksForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+input {
+  padding: 5px 16px;
+}
+
+#booksForm button {
+  align-self: end;
+  padding: 5px 12px
 }
