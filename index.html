@@ -11,63 +11,30 @@
 
 <body>
 
-    <div class="container">
-      
-        <div id="render-books">
+<main>
 
-            <table>
-                <tr>
-                    <td>
-                        <h2>"Title" by Author</h2>
-                    </td>
-                    <td><a class='delete' href="#">Remove</a></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>"Title" by Author</h2>
-                    </td>
-                    <td><a class='delete' href="#">Remove</a></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>"Title" by Author</h2>
-                    </td>
-                    <td><a class='delete' href="#">Remove</a></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>"Title" by Author</h2>
-                    </td>
-                    <td><a class='delete' href="#">Remove</a></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>"Title" by Author</h2>
-                    </td>
-                    <td><a class='delete' href="#">Remove</a></td>
-                </tr>
-
-            </table>
-
-        </div>
-
-        <div class="form-container">
-            <h2>Add a new book</h2>
-            <form id='booksForm'>
-                <input id='title' type="text" placeholder='Title'><br>
-                <input id='author' type="text" placeholder='Author'><br>
-                <button id='addBook' type=button>Add</button>
-            </form>
-
-        </div>
+  <div class="container">
+    <div id="render-books">
+      <h1 class="header">All awesome books</h1>
+      <table id="render-content">
+      </table>
 
     </div>
+    <hr/>
+    <div class="form-container">
+      <h2>Add a new book</h2>
+      <form id='booksForm'>
+        <input id='title' type="text" placeholder='Title'><br>
+        <input id='author' type="text" placeholder='Author'><br>
+        <button id='addBook' type="button">Add</button>
+      </form>
+    </div>
 
-    <script src="main.js"></script>
+  </div>
+
+</main>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

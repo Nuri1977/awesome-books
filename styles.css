@@ -4,6 +4,16 @@
   margin: 0;
 }
 
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 0;
+}
+
 #render-books {
   display: grid;
   margin-top: 20px;
@@ -27,8 +37,7 @@
 }
 
 .form-container {
-  margin: 50px 24px;
-  ;
+  margin: 30px 24px;
 }
 
 .form-container h2 {
@@ -48,5 +57,11 @@ input {
 
 #booksForm button {
   align-self: end;
-  padding: 5px 12px
+  padding: 5px 12px;
+}
+
+hr {
+  width: 70px;
+  margin: 20px auto;
+  border: 1px solid rgb(29, 22, 22);
 }
