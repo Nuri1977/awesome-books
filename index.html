@@ -2,39 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Awesome Books</title>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="styles.css" />
+ <title>Awesome Books</title>
 </head>
 
 <body>
-
-<main>
-
+ <main>
+  <nav>
+   <div class="heading">
+    <p>Awesome books</p>
+   </div>
+   <ul>
+    <li><a id="book-list" href="#render-books">List</a></li>
+    <li class="line"></li>
+    <li><a id="add-book" href=".form-container">Add new</a></li>
+    <li class="line"></li>
+    <li><a id="contact" href="#contact-form">Contact</a></li>
+   </ul>
+  </nav>
   <div class="container">
-    <div id="render-books">
-      <h1 class="header">All awesome books</h1>
-      <table id="render-content">
-      </table>
-
-    </div>
-    <hr/>
-    <div class="form-container">
-      <h2>Add a new book</h2>
-      <form id='booksForm'>
-        <input id='title' type="text" placeholder='Title'><br>
-        <input id='author' type="text" placeholder='Author'><br>
-        <button id='addBook' type="button">Add</button>
-      </form>
-    </div>
-
+   <div id="render-books">
+    <h1 class="header">All awesome books</h1>
+    <div id="render-content"></div>
+    <hr />
+   </div>
+   <div class="form-container">
+    <h2>Add a new book</h2>
+    <form id="booksForm">
+     <input id="title" type="text" placeholder="Title" /><br />
+     <input id="author" type="text" placeholder="Author" /><br />
+     <button id="addBook" type="button">Add</button>
+    </form>
+   </div>
   </div>
-
-</main>
-
-  <script src="main.js"></script>
+  <div id="contact-form">
+   <h2>Contact Information</h2>
+   <div class="text">
+    <p>Do you have any questions or you just want to say "Hello"?</p>
+    <p>You can reach out to us!</p>
+   </div>
+   <ul>
+    <li>Our email: email@gmail.com</li>
+    <li>Our phone number: 0123456789</li>
+    <li>Our address: Streetname 22, 84503 City, Country</li>
+   </ul>
+  </div>
+  <footer>
+   <p>Copyright: &copy; 2022 made by Nuri and Dejan</p>
+  </footer>
+ </main>
+ <script src="main.js"></script>
 </body>
 
 </html>
