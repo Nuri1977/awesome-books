@@ -9,6 +9,7 @@ const localBooks = localStorage.getItem('booksStore');
 /* CLASS BOOK */
 class Book {
   constructor(title, author) {
+    this.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
     this.title = title;
     this.author = author;
   }
@@ -22,8 +23,8 @@ class Book {
     }
   }
 
-  static deleteItem(deleteName) {
-    books = books.filter((book) => book.title !== deleteName);
+  static deleteItem(UID) {
+    books = books.filter((book) => book.id !== UID);
   }
 }
 
@@ -37,7 +38,7 @@ function render() {
       <td>
         <h2>"${books[i].title}" by ${books[i].author}</h2>
       </td>
-      <td><a class='delete' name="${books[i].title}" href="#">Remove</a></td>
+      <td><a class='delete' name="${books[i].id}" href="#">Remove</a></td>
     </tr>
     `;
     renderBooks.innerHTML += renderItem;
