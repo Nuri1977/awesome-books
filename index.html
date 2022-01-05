@@ -10,51 +10,61 @@
 </head>
 
 <body>
- <main>
+
   <nav>
    <div class="heading">
     <p>Awesome books</p>
    </div>
-   <ul>
-    <li><a id="book-list" href="#render-books">List</a></li>
-    <li class="line"></li>
-    <li><a id="add-book" href=".form-container">Add new</a></li>
-    <li class="line"></li>
-    <li><a id="contact" href="#contact-form">Contact</a></li>
-   </ul>
+    <ul>
+      <li><a id="book-list" class="active" href="#">List</a></li>
+      <li><a id="add-book" href="#">Add new</a></li>
+      <li><a id="contact" href="#">Contact</a></li>
+    </ul>
   </nav>
-  <div class="container">
-   <div id="render-books">
-    <h1 class="header">All awesome books</h1>
-    <div id="render-content"></div>
-    <hr />
-   </div>
-   <div class="form-container">
-    <h2>Add a new book</h2>
-    <form id="booksForm">
-     <input id="title" type="text" placeholder="Title" /><br />
-     <input id="author" type="text" placeholder="Author" /><br />
-     <button id="addBook" type="button">Add</button>
-    </form>
-   </div>
+  <div id="time" class="time">
   </div>
-  <div id="contact-form">
-   <h2>Contact Information</h2>
-   <div class="text">
-    <p>Do you have any questions or you just want to say "Hello"?</p>
-    <p>You can reach out to us!</p>
-   </div>
-   <ul>
-    <li>Our email: email@gmail.com</li>
-    <li>Our phone number: 0123456789</li>
-    <li>Our address: Streetname 22, 84503 City, Country</li>
-   </ul>
-  </div>
+
+  <section id="section-list">
+    <div class="container">
+      <div id="render-books">
+        <h1 class="header">All awesome books</h1>
+        <div id="render-content"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book-form" class="hide-content">
+    <div class="form-container">
+      <h2>Add a new book</h2>
+      <form id="booksForm">
+        <input id="title" type="text" placeholder="Title" /><br />
+        <input id="author" type="text" placeholder="Author" /><br />
+        <button id="addBook" type="button">Add</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact-info" class="hide-content">
+    <div id="contact-form">
+      <h2>Contact Information</h2>
+      <div class="text">
+        <p class="foooter-p1">Do you have any questions or you just want to say "Hello"?</p>
+        <p class="foooter-p1">You can reach out to us!</p>
+      </div>
+      <ul>
+        <li>Our email: email@gmail.com</li>
+        <li>Our phone number: 0123456789</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
    <p>Copyright: &copy; 2022 made by Nuri and Dejan</p>
   </footer>
- </main>
+
  <script src="main.js"></script>
+ <script src="navigation.js"></script>
 </body>
 
 </html>

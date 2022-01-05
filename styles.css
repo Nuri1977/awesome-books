@@ -6,8 +6,7 @@
   margin: 0;
 }
 
-main {
-  height: 100vh;
+body {
   background: rgb(170, 170, 199);
 }
 
@@ -20,15 +19,15 @@ main {
 }
 
 nav {
-  position: fixed;
   width: 100%;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2471A3 ;
+  background-color: #2471a3;
   border: 2px solid rgb(113, 141, 167);
   padding: 5px 10px;
+  z-index: 10;
 }
 
 nav ul {
@@ -39,7 +38,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  margin-left: 5px
+  margin-left: 5px;
 }
 
 nav ul li a {
@@ -48,38 +47,19 @@ nav ul li a {
   color: #fff;
 }
 
+.time {
+  text-align: right;
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+
 .header {
   text-align: center;
   margin: 20px 0;
 }
 
-#render-books {
-  display: none;
-  position: relative;
-  top: 20vh;
-}
-
 #render-content {
-  padding: 10px
-}
-
-#render-content ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding: 2px 0;
-}
-
-#render-content ul h2 {
-  font-size: 17px;
-  font-family: 'Popins', sans-serif;
-  color: #2874A6;
-  font-style: italic;
-}
-
-#render-content li a {
-  background-color: #2874A6;
+  padding: 10px;
 }
 
 #render-books a {
@@ -91,23 +71,50 @@ nav ul li a {
   padding: 2px;
 }
 
-#render-content ul:nth-child(odd) {
-  background-color: #bbc5ce;
-}
-
-.form-container {
-
-  position: relative;
-  top: 33vh;
-  color: white;
-  background: rgb(110, 144, 196);
-  padding: 10px;
-  margin: 0 10px;
+#render-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2px 0;
 }
 
 .form-container h2 {
   text-align: center;
   margin-bottom: 30px;
+}
+
+#contact-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#render-content ul h2 {
+  font-size: 17px;
+  font-family: 'Popins', sans-serif;
+  color: #2874a6;
+  font-style: italic;
+}
+
+#render-content li a {
+  background-color: #2874a6;
+}
+
+#contact-form ul {
+  margin: 19px 50px;
+}
+
+#render-content ul:nth-child(odd) {
+  background-color: #bbc5ce;
+}
+
+.form-container {
+  color: white;
+  background: rgb(110, 144, 196);
+  padding: 10px;
+  margin: 0 10px;
 }
 
 #booksForm {
@@ -134,22 +141,7 @@ hr {
 #contact-form {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 150px;
   padding: 10px;
-  visibility: hidden;;
-  
-}
-
-#contact-form ul {
-  margin: 19px 50px;
-}
-
-#contact-form h2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 #contact-form p {
@@ -164,17 +156,17 @@ footer {
   width: 100%;
   bottom: 0;
   text-align: center;
-  background-color: #2471A3 ;
+  background-color: #2471a3;
   border: 2px solid rgb(113, 141, 167);
   padding: 10px 10px;
 }
 
-footer p {
+.foooter-p1 {
   font-size: 15px;
   color: #fff;
 }
 
-@media only screen and (min-width:678px) {
+@media only screen and (min-width: 678px) {
   .heading p {
     font-size: 24px;
   }
@@ -185,19 +177,13 @@ footer p {
 
   nav ul li {
     list-style: none;
-    margin-left: 20px
+    margin-left: 20px;
   }
 
   nav ul li a {
     font-size: 20px;
     text-decoration: none;
     color: #fff;
-  }
-
-  #render-books {
-  
-    position: relative;
-    top: 20vh;
   }
 
   .header {
@@ -213,11 +199,14 @@ footer p {
     padding: 2px 0;
   }
 
+  #contact-form h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
   #render-content ul h2 {
     font-size: 24px;
-  }
-  #render-content li a {
-    background-color: #2874A6;
   }
 
   #render-books a {
@@ -225,25 +214,21 @@ footer p {
     padding: 10px;
   }
 
+  #render-content li a {
+    background-color: #2874a6;
+  }
+
   #contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 300px;
     padding: 10px;
   }
-  
+
   #contact-form ul {
     margin: 19px 50px;
   }
-  
-  #contact-form h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
+
   #contact-form p {
     font-size: 20px;
     font-weight: bold;
@@ -259,7 +244,17 @@ footer p {
     padding: 10px 50px;
   }
 
-  footer p {
+  .foooter-p1 {
     font-size: 20px;
   }
+}
+
+.active {
+  background-color: rgb(110, 144, 196);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.hide-content {
+  display: none;
 }
