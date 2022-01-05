@@ -2,39 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Awesome Books</title>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="styles.css" />
+ <title>Awesome Books</title>
 </head>
 
 <body>
 
-<main>
-
-  <div class="container">
-    <div id="render-books">
-      <h1 class="header">All awesome books</h1>
-      <table id="render-content">
-      </table>
-
-    </div>
-    <hr/>
-    <div class="form-container">
-      <h2>Add a new book</h2>
-      <form id='booksForm'>
-        <input id='title' type="text" placeholder='Title'><br>
-        <input id='author' type="text" placeholder='Author'><br>
-        <button id='addBook' type="button">Add</button>
-      </form>
-    </div>
-
+  <nav>
+   <div class="heading">
+    <p>Awesome books</p>
+   </div>
+    <ul>
+      <li><a id="book-list" class="active" href="#">List</a></li>
+      <li><a id="add-book" href="#">Add new</a></li>
+      <li><a id="contact" href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="time" class="time">
   </div>
 
-</main>
+  <section id="section-list">
+    <div class="container">
+      <div id="render-books">
+        <h1 class="header">All awesome books</h1>
+        <div id="render-content"></div>
+      </div>
+    </div>
+  </section>
 
-  <script src="main.js"></script>
+  <section id="book-form" class="hide-content">
+    <div class="form-container">
+      <h2>Add a new book</h2>
+      <form id="booksForm">
+        <input id="title" type="text" placeholder="Title" /><br />
+        <input id="author" type="text" placeholder="Author" /><br />
+        <button id="addBook" type="button">Add</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact-info" class="hide-content">
+    <div id="contact-form">
+      <h2>Contact Information</h2>
+      <div class="text">
+        <p class="foooter-p1">Do you have any questions or you just want to say "Hello"?</p>
+        <p class="foooter-p1">You can reach out to us!</p>
+      </div>
+      <ul>
+        <li>Our email: email@gmail.com</li>
+        <li>Our phone number: 0123456789</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+   <p>Copyright: &copy; 2022 made by Nuri and Dejan</p>
+  </footer>
+
+ <script src="main.js"></script>
+ <script src="navigation.js"></script>
 </body>
 
 </html>
